@@ -4,7 +4,13 @@ html {
 body {
   /* margin: 10px; */
   background-color: rgb(117, 82, 82);
+  width: 100vw;
   height: 220vh;
+  border: 15px solid black;
+}
+
+#menuVH {
+  height: 300vh;
 }
 
 a:link {
@@ -21,6 +27,35 @@ a:hover {
 
 a:focus {
   color: rgb(71, 71, 71);
+}
+
+a {
+  text-decoration: none;
+}
+
+.copyrightParagrah {
+  width: 700px;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+#contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  list-style: none;
+  background-color: grey;
+  width: 14rem;
+  height: 9rem;
+  border: 2px solid rgb(83, 47, 47);
+  border-radius: 20%;
 }
 
 /* CONTAINERS    //////////////////////////////////////////////////////// */
@@ -40,7 +75,7 @@ a:focus {
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;
-  width: 100vw;
+  width: 98vw;
   background-color: grey;
   padding: 7px;
   border: 2px solid rgb(87, 60, 60);
@@ -59,7 +94,7 @@ a:focus {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  width: 100vw;
+  width: 98vw;
   background-color: grey;
   padding: 7px;
   border: 2px solid rgb(87, 60, 60);
@@ -73,14 +108,16 @@ a:focus {
   padding: 12px;
 }
 
-#pgTwoMainContainer {
+#pgTwoMainContainer,
+#covidContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-#pgTwoAboutContainer {
+#pgTwoAboutContainer,
+#covidPolicyContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -90,7 +127,8 @@ a:focus {
   width: 700px;
 }
 
-#pgTwoParagrahContainer {
+#pgTwoParagrahContainer,
+#covidPictureTextContainer {
   width: 300px;
   margin-left: 12px;
   padding: 15px;
@@ -103,12 +141,75 @@ a:focus {
   border: 6px solid rgb(85, 70, 70);
 }
 
-#backgroundImagePgTwo {
+#backgroundImagePgTwo,
+#imageCovid {
   width: 350px;
   height: 400px;
   margin: 15px;
+  object-fit: cover;
+}
+/*      TABLES STYLING         //////////////////////////////////////////////////////////////////// */
+
+.tableHeader {
 }
 
-.copyrightParagrah {
-  width: 700px;
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+tbody {
+  background-color: rgb(83, 63, 63);
+  padding: 7px;
+}
+
+tr,
+th,
+td {
+  border-collapse: collapse;
+  /* border: 2px solid grey; */
+  width: 20rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.menuImages {
+  position: absolute;
+  width: 19.8rem;
+  height: 19rem;
+  object-fit: cover;
+}
+
+#noodleEgg {
+  top: 40rem;
+}
+
+#shrimpEggroll {
+  top: 58rem;
+  z-index: 1;
+}
+
+#takeOut1 {
+  top: 75.2rem;
+}
+
+#shrimpNoodles {
+  right: -1.4rem;
+}
+
+#shrimpSoup {
+  right: -1.4rem;
+  top: 40rem;
+}
+
+#redBowlThai {
+  right: -1.4rem;
+  top: 58rem;
+}
+
+#takeOut2 {
+  right: -1.4rem;
+  top: 75.2rem;
 }
